@@ -2,7 +2,13 @@
 # Blooming-blooms MICROSERVICE.AUTH-SERVICE
 
 ## Description
-This is the Spring cloud API Gateway server. which is for routing for appropriate service and check the user authenticaion and authorization. This service is consisted of authenticationFilter and optional authentication filter as well. Optional authentication filter is needed when user look up the products without login statement. and also There are authorization filters for each role. So this service offers flexible authentication and authorization.
+This is the Blooming-blooms auth-service. For handle sophisticated authentication and authorization. There are four filter chains for each role(social-user, oauth2, store-manager, system-admin) for separation of concern. I distinct social-user filter chain and oauth2 filter chain. oauth2 filters only handle authenticate with oauth2 remote server and getting data from the oauth2 remote server. as result of distinct two of filter chain. I can inject different AuthenticationSuccessHandler when Oauth2 authenticaiton succeeded and User authentication is succeeded(There is the requirment of user sign-up : users who have withdrawn membership cannot register as a member within 24 hours for blocking abuse)
+
+
+---------
+### Diagram
+#### Below pic is the diagram how handle the JWT token without duplicated code and increase the re-usability.
+![image](https://github.com/JIUNG9/BB-AUTH-SERVICE/assets/60885635/155d8717-a218-4ff3-8678-fac04d502f1b)
 
 ## Getting Started
 
