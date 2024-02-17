@@ -1,20 +1,39 @@
 
-# MICROSERVICE.AUTH-SERVICE
+# Blooming-blooms MICROSERVICE.AUTH-SERVICE
 
 ## Description
-
+This is the Spring cloud API Gateway server. which is for routing for appropriate service and check the user authenticaion and authorization. This service is consisted of authenticationFilter and optional authentication filter as well. Optional authentication filter is needed when user look up the products without login statement. and also There are authorization filters for each role. So this service offers flexible authentication and authorization.
 
 ## Getting Started
 
+### Prerequisites
 
-## Deployment
+#### Install(Mac brew)
+```
+brew install redis
+```
+#### Install(Window)
+```
+sudo apt-get install redis
+```
 
+### Usage 
+
+#### Redis
+```
+redis-cli -h host -p port -a password
+```
 
 ## API Documentation
 
+https://www.notion.so/0acd63e526144ac3aeac0bea0413704a?pvs=4
 
+## ERD
 
-## Architecture
+https://www.erdcloud.com/d/PSD5Cgi6GrFQbdxgK
+
+## System Architecture
+![image](https://github.com/JIUNG9/BB-APIGATEWAY-SERVICE/assets/60885635/ba580899-5ef3-4dda-b242-8d4d84666640)
 
 
 <!-- Backend Languages and Tools -->
@@ -30,6 +49,8 @@
 
 
 
+
+## Contacts
 
 📫 How to reach me **rnwldnd7248@gmai.com**
 
