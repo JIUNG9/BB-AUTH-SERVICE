@@ -2,8 +2,7 @@
 # Blooming-blooms MICROSERVICE.AUTH-SERVICE
 
 ## Description
-This is the Blooming-blooms auth-service. For handle sophisticated authentication and authorization. There are four filter chains for each role(social-user, oauth2, store-manager, system-admin) for separation of concern. I distinct social-user filter chain and oauth2 filter chain. oauth2 filters only handle authenticate with oauth2 remote server and getting data from the oauth2 remote server. as result of distinct two of filter chain. I can inject different AuthenticationSuccessHandler when Oauth2 authenticaiton succeeded and User authentication is succeeded(There is the requirment of user sign-up : users who have withdrawn membership cannot register as a member within 24 hours for blocking abuse)
-
+This is the Blooming-blooms auth-service, designed for sophisticated authentication and authorization. It features four filter chains, each tailored for specific roles (social-user, oauth2, store-manager, system-admin) to separate concerns. I distinguish between the social-user filter chain and the oauth2 filter chain. The oauth2 filters are dedicated to authenticating with the oauth2 remote server and retrieving data from it. By separating these two filter chains, I can inject different AuthenticationSuccessHandlers for when Oauth2 authentication and user authentication succeed. (There is a requirement for user sign-up: users who have terminated their membership cannot register as a member within 24 hours to prevent abuse.)
 
 ---------
 ### Diagram
