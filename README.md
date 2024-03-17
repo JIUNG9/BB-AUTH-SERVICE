@@ -7,7 +7,8 @@ This is the Blooming-blooms auth-service, designed for sophisticated authenticat
 ---------
 ### Diagram
 #### Below pic is the diagram how handle the JWT token without duplicated code and increase the re-usability.
-![image](https://github.com/JIUNG9/BB-AUTH-SERVICE/assets/60885635/155d8717-a218-4ff3-8678-fac04d502f1b)
+<img width="814" alt="다이어그램 도식화" src="https://github.com/JIUNG9/BB-AUTH-SERVICE/assets/60885635/cda3ee44-74a8-43d1-84ef-0f637b310d3d">
+
 
 ## Getting Started
 
