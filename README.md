@@ -5,11 +5,6 @@
 This is the Blooming-blooms auth-service, designed for sophisticated authentication and authorization. It features four filter chains, each tailored for specific roles (social-user, oauth2, store-manager, system-admin) to separate concerns. I distinguish between the social-user filter chain and the oauth2 filter chain. The oauth2 filters are dedicated to authenticating with the oauth2 remote server and retrieving data from it. By separating these two filter chains, I can inject different AuthenticationSuccessHandlers for when Oauth2 authentication and user authentication succeed. (There is a requirement for user sign-up: users who have terminated their membership cannot register as a member within 24 hours to prevent abuse.)
 
 ---------
-### Diagram
-#### Below pic is the diagram how handle the JWT token without duplicated code and increase the re-usability.
-<img width="814" alt="다이어그램 도식화" src="https://github.com/JIUNG9/BB-AUTH-SERVICE/assets/60885635/cda3ee44-74a8-43d1-84ef-0f637b310d3d">
-
-
 ## Getting Started
 
 ### Prerequisites
